@@ -1,4 +1,4 @@
-# Demonstrator shadera z efektem kreskówkowania - Hatches
+# Demonstrator shadera z efektem kreskówkowania
 
 Interaktywne demo przedstawia 6-poziomowy shader kreskówkowania oparty na teksturach, zbudowany za pomocą Three.js i Vite.
 
@@ -14,46 +14,55 @@ Interaktywne demo przedstawia 6-poziomowy shader kreskówkowania oparty na tekst
 
 ---
 
-## Pierwsze kroki
+## Wymagania
+- Node.js w wersji **18.x** lub nowszej
+- npm (zazwyczaj instalowany razem z Node.js)
 
-### 1. Wymagania
-* Node ≥ 18
-  ```bash
-  node --version
-  # v18.x  or  newer
-  ```
+Sprawdź wersję Node i npm:
 
-### 2. Zainstaluj pakiety
 ```bash
-npm install three vite
+node -v
+npm -v
 ```
 
-### 3. Serwer deweloperski
+---
+
+## Instalajca
+
+### 1. Sklonuj repozytorium
+```bash
+git clone https://github.com/FakeChapo/DemonstratorShadera
+```
+
+### 2. Przejdź do folderu projektu
+```bash
+cd DemonstratorShadera
+```
+
+### 3. Zainstaluj zależności:
+```bash
+npm install
+```
+
+### 4. Uruchom projekt w trybie deweloperskim
 ```bash
 npm run dev
 ```
-Aplikacja jest serwowana pod adresem `http://localhost:5173` (port domyślny Vite) z HMR.
 
-### 4. Kompilacja produkcyjna
-```bash
-npm run build
-# Statyczne pliki będą znajdować się w /dist
+### 5. Otwórz przeglądarkę i wejdź pod adres:
 ```
-
-### 5. Podgląd kompilacji produkcyjnej
-```bash
-npm run preview
+http://localhost:5173
 ```
-Vite będzie hostować folder '/dist', dzięki czemu będziesz mógł przetestować zoptymalizowany pakiet.
+lub inny port, jeśli zostanie podany w terminalu.
 
 ---
 
 ## Sterowanie
-| Klawisz / Myszka            | Akcja                |
-| ---------------------- | --------------------- |
-| **W A S D**            | Poruszanie się w płaszczyźnie XZ      |
-| **Spacja** / **Shift**  | Idź do góry / do dołu       |
-| **Przeciągnięcie myszą**         | Rozglądaj się           |
-| **H**                  | Włącz / wyłącz shader |
+| Klawisz / Myszka           | Akcja                              |
+| -------------------------- | ---------------------------------- |
+| **W A S D**                | Poruszanie się w płaszczyźnie XZ   |
+| **Spacja** / **Shift**     | Idź do góry / do dołu              |
+| **Przeciągnięcie myszą**   | Rozglądaj się                      |
+| **H**                      | Włącz / wyłącz shader              |
 
-Mały wskaźnik (w prawym górnym rogu) pokazuje bieżący stan shadera; Nakładka pomocy jest wyświetlana w lewym dolnym rogu.
+Mały wskaźnik w prawym górnym rogu pokazuje bieżący stan shadera. Nakładka pomocy jest wyświetlana w lewym dolnym rogu.
